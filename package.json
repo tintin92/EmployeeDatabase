@@ -1,0 +1,24 @@
+{
+  "name": "employeedatabase",
+  "version": "1.0.0",
+  "description": "Challenge is to architect and build a solution for managing a company's employees",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tintin92/EmployeeDatabase.git"
+  },
+  "author": "Tanner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tintin92/EmployeeDatabase/issues"
+  },
+  "homepage": "https://github.com/tintin92/EmployeeDatabase#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^7.3.3",
+    "mysql": "^2.18.1"
+  }
+}
