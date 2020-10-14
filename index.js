@@ -55,8 +55,44 @@ function begin() {
                 },
             ],
         })
+        .then(function (answer) {
+            switch (answer.choice) {
+                case "VIEW_EMPLOYEES":
+                    db.viewEmployees();
+                    break;
 
+                case "ADD_EMPLOYEE":
+                    db.addEmployee();
+                    break;
+
+
+                case "UPDATE_EMPLOYEE_ROLE":
+                    db.updateEmployeeRole();
+                    break;
+
+                case "VIEW_ROLES":
+                    db.viewAllRoles();
+                    break;
+
+                case "ADD_ROLE":
+                    db.addRole();
+                    break;
+
+                case "VIEW_DEPARTMENTS":
+                    db.viewAllDepartments();
+                    break;
+
+                case "ADD_DEPARTMENT":
+                    db.addDepartment();
+                    break;
+
+                case "QUIT":
+                    begin();
+                    break;
+            }
+        });
 }
+
 
 
 
