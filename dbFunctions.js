@@ -9,15 +9,13 @@ class DB {
             console.table(results);
         });
     }
-    
-    viewAllDepartments() {
-        connection.query("SELECT * FROM department", function (err, results) {
-            if (err) throw err;
-            console.table(results);
-            // console.log("is this working?");
-        });
-    }
 
+    // viewAllDepartments() {
+    //     connection.query("SELECT * FROM department", function (err, results) {
+    //         if (err) throw err;
+    //         console.table(results);
+    //     });
+    // }
 
     addEmployee() {
         inquirer
@@ -39,20 +37,21 @@ class DB {
                     type: "number",
                     message: "What is the role id of the employee you would like to add?",
                     validate: function (input) {
-                        if (typeof input == "NaN") {
-                            return "You need to provide a number";
+                        if (typeof input === "NaN") {
+                            return "Please proivde a number 1-10";
                         }
                         return true;
                     },
                 },
+
                 {
                     name: "manager_id",
                     type: "number",
                     message:
-                        "What is the manager id of the employee you would like to add?",
+                        "What is the manager id # of the employee you would like to add?",
                     validate: function (input) {
-                        if (typeof input == "NaN") {
-                            return "You need to provide a number";
+                        if (typeof input === "NaN") {
+                            return "Please proivde a number 1-10";
                         }
                         return true;
                     },
@@ -71,7 +70,7 @@ class DB {
                         if (err) throw err;
                         console.log("You've added an employee!");
                         // console.table(results);
-                        // then want to call viewEmployees(); to see new employee added to table but saying viewEmployees(); is undefined
+                    
                     }
                 );
             });
