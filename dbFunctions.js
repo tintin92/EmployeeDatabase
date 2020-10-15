@@ -10,12 +10,12 @@ class DB {
         });
     }
 
-    // viewAllDepartments() {
-    //     connection.query("SELECT * FROM department", function (err, results) {
-    //         if (err) throw err;
-    //         console.table(results);
-    //     });
-    // }
+    viewAllDepartments() {
+        connection.query("SELECT * FROM department", function (err, results) {
+            if (err) throw err;
+            console.table(results);
+        });
+    }
 
     addEmployee() {
         inquirer
@@ -69,14 +69,19 @@ class DB {
                     function (err, results) {
                         if (err) throw err;
                         console.log("You've added an employee!");
-                        // console.table(results);
-                    
                     }
                 );
             });
     }
 
+    viewAllRoles() {
+        connection.query("SELECT * FROM role", function (err, results) {
+            if (err) throw err;
+            console.table(results);
+
+        });
+    }
+
 
 }
-
 module.exports = DB;
