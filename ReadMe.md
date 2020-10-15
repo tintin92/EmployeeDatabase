@@ -1,8 +1,8 @@
 
 # Employee Database
-Employee DB Walkthrough [Demo Gif](http://drive.google.com/file/d/1_2JHm6Er0THpt8HbuQqeSPToKMeKmgpZ/view)
+[Employee DB Walkthrough Demo Gif](http://drive.google.com/file/d/1_2JHm6Er0THpt8HbuQqeSPToKMeKmgpZ/view)
 
-View All Employees Walkthrough [Demo Gif] (https://drive.google.com/file/d/1BxTFohuWQECVrJGUJGe6W5Utwu1nkHcn/view)
+[View All Employees Walkthrough](http://drive.google.com/file/d/1BxTFohuWQECVrJGUJGe6W5Utwu1nkHcn/view)
 
 ## Description
 
